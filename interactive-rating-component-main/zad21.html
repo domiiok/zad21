@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Rating Component</title>
+
+  <link rel="stylesheet" href="zad21.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+  <main class="card" id="rating-card">
+    <div class="star-box">
+      <img src="images/icon-star.svg" alt="star icon">
+    </div>
+
+    <h1>How did we do?</h1>
+
+    <p>
+      Please let us know how we did with your support request.
+      All feedback is appreciated to help us improve our offering!
+    </p>
+
+    <div class="rating-buttons">
+      <button class="rating-btn">1</button>
+      <button class="rating-btn">2</button>
+      <button class="rating-btn">3</button>
+      <button class="rating-btn">4</button>
+      <button class="rating-btn">5</button>
+    </div>
+
+    <button class="submit-btn" id="submit-btn">
+      SUBMIT
+    </button>
+  </main>
+
+
+  <main class="card thank-you hidden" id="thank-you-card">
+    <img
+      src="images/illustration-thank-you.svg"
+      alt="thank you illustration"
+      class="thank-you-img"
+    >
+
+    <div class="selected-rating" id="selected-rating">
+      You selected 0 out of 5
+    </div>
+
+    <h2>Thank you!</h2>
+
+    <p>
+      We appreciate you taking the time to give a rating.
+      If you ever need more support, don’t hesitate to get in touch!
+    </p>
+  </main>
+
+  <script src="zad21.js"></script>
+</body>
+</html>
